@@ -47,6 +47,12 @@
     {{ end }}
   </div>
 </div>
+
+{{ if eq .Params.contenido false }}
+
+{{ else }}
 <div class="content">
   {{ .Content }}
 </div>
+{{ end }}
+
